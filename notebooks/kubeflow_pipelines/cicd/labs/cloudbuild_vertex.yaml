@@ -40,14 +40,13 @@ steps:
   args:
   - '-c'
   - |
-    python kfp-cli_vertex/run_pipeline.py --project_id $PROJECT_ID --region $_REGION --template_path $_PIPELINE_FOLDER/pipeline_vertex/covertype_kfp_pipeline.json --display_name 'covertype-kfp-with-cloudbuild'# TODO
+    python kfp-cli_vertex/run_pipeline.py --project_id $PROJECT_ID --region $_REGION --template_path $_PIPELINE_FOLDER/pipeline_vertex/covertype_kfp_pipeline.json --display_name covertype-kfp-with-cloudbuild 
+    # coverype_kfp_pipeline
     
     
 # # Push the images to Container Registry
 # # TODO: List the images to be pushed to the project Docker registry
-# images: # TODO
-#     -  'gcr.io/$PROJECT_ID/trainer_image_covertype_vertex:latest'
-#     -  'gcr.io/$PROJECT_ID/kfp-cli-vertex:latest'
+# images: ['gcr.io/$PROJECT_ID/trainer_image_covertype_vertex:latest']
 
 
 # This is required since the pipeline run overflows the default timeout
