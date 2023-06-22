@@ -5,3 +5,4 @@ RUN pip install google-cloud-aiplatform==1.7.1 kfp==1.8.1
 
 
 COPY . ./
+RUN ls
