@@ -45,7 +45,7 @@ steps:
     
     
 # # Push the images to Container Registry
-# # TODO: List the images to be pushed to the project Docker registry
+# TODO: List the images to be pushed to the project Docker registry
 # images: ['gcr.io/$PROJECT_ID/trainer_image_covertype_vertex:latest']
 
 
